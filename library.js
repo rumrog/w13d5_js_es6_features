@@ -17,8 +17,8 @@ Library.prototype.addBooks = function (newBooks) {
 };
 
 Library.prototype.printInventory = function () {
-  this.books.forEach((book) => {
-    console.log(`${book.title} by ${book.author}`);
+  this.books.forEach(({title, author}) => {
+    console.log(`${title} by ${author}`);
   });
 };
 
